@@ -1,6 +1,7 @@
 import geometry.Circle;
 import geometry.Point;
 import geometry.ColoredCircle;
+import geometry.Rectangle;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,5 +38,7 @@ public class Main {
         
         
         }
+
+        
     }
 }
