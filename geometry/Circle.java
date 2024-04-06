@@ -15,6 +15,8 @@ public class Circle {
         return center;
     }
 
+    public double calculateArea() {
+        return Math.PI * radius * radius;}
   
     public double getRadius() {
         return radius;

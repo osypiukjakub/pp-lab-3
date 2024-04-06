@@ -15,5 +15,27 @@ public class Main {
         System.out.println("promien: " + circle.getRadius());
         System.out.println("kolor " + coloredCircle.getColor());
         
+
+        Circle[] circles = new Circle[6];
+        circles[0] = new Circle(new Point(6, 3), 5);
+        circles[1] = new ColoredCircle(new Point(1, 7), 7, "bialy");
+        circles[2] = new Circle(new Point(2, 4), 7);
+        circles[3] = new Circle(new Point(1, 5), 5);
+        circles[4] = new Circle(new Point(6, 6), 5);
+        circles[5] = new ColoredCircle(new Point(2, 5), 6, "pomaranczowy");
+        
+        for (Circle kolo : circles) {
+            double area = kolo.calculateArea();
+            System.out.println("Pole kola: " + area);
+        
+            if (kolo instanceof ColoredCircle) {
+                ColoredCircle kolorowekolo = (ColoredCircle) kolo;
+                String color = kolorowekolo.getColor();
+                System.out.println("Kolor kola: " + color);
+            }
+        
+        
+        
+        }
     }
 }
