@@ -26,10 +26,7 @@ public class Point {
 
 public class Main {
     public static void main(String[] args) {
-        // Tworzenie obiektu klasy Point i inicjowanie go wartościami
         Point point = new Point(4.0, 2.0);
-        
-        // Wyświetlanie współrzędnych punktu
         System.out.println("Wspolrzedne dla punktu (" + point.getX() + ", " + point.getY() + ")");
     }
 }
